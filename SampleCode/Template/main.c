@@ -48,7 +48,7 @@ typedef enum
 #define ABS(X)  								((X) > 0 ? (X) : -(X)) 
 
 #define ADC_DIGITAL_SCALE(void) 				(0xFFFU >> ((0) >> (3U - 1U)))		//0: 12 BIT 
-#define ADC_CALC_DATA_TO_VOLTAGE(VREF,DATA) ((DATA) * (VREF) / ADC_DIGITAL_SCALE())
+#define ADC_CALC_DATA_TO_VOLTAGE(DATA,VREF) ((DATA) * (VREF) / ADC_DIGITAL_SCALE())
 
 
 #define ADCextendSampling 					(0)
